@@ -8,10 +8,12 @@ import java.util.ArrayList;
 public class Booking {
     private int nightsBooked;
     private Room room;
+    private Bedroom bedroom;
 
-    public Booking(int nightsBooked, Room room) {
+    public Booking(int nightsBooked, Room room, Bedroom bedroom) {
         this.nightsBooked = nightsBooked;
         this.room = room;
+        this.bedroom = bedroom;
     }
 
     public int getNightsBooked() {
@@ -28,5 +30,9 @@ public class Booking {
 
     public void setBedroom(Bedroom bedroom) {
         this.room = bedroom;
+    }
+
+    public int totalCostOfBooking(){
+       return this.nightsBooked * bedroom.getRate();
     }
 }

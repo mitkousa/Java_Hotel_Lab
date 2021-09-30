@@ -10,7 +10,7 @@ public class BedroomTest {
 
     @Before
     public void before(){
-        bedroom = new Bedroom(4,102, RoomType.DOUBLE);
+        bedroom = new Bedroom(4,102, RoomType.DOUBLE, 80);
     }
 
     @Test

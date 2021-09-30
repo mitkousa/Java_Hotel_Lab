@@ -13,7 +13,7 @@ public class RoomTest {
 
     @Before
     public  void  before(){
-        room = new Bedroom(4, 104, RoomType.FAMILY);
+        room = new Bedroom(4, 104, RoomType.FAMILY, 80);
         guest = new Guest("Colin");
 
     }

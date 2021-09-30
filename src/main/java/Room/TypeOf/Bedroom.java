@@ -6,11 +6,13 @@ import RoomType.RoomType;
 public class Bedroom extends Room {
     private int roomNumber;
     private RoomType roomType;
+    private int rate;
 
-    public Bedroom(int capacity, int roomNumber, RoomType roomType) {
+    public Bedroom(int capacity, int roomNumber, RoomType roomType, int rate) {
         super(capacity);
         this.roomNumber = roomNumber;
         this.roomType = roomType;
+        this.rate = rate;
     }
 
     public int getRoomNumber() {
@@ -29,4 +31,11 @@ public class Bedroom extends Room {
         this.roomType = roomType;
     }
 
+    public int getRate() {
+        return rate;
+    }
+
+    public void setRate(int rate) {
+        this.rate = rate;
+    }
 }
