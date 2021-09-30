@@ -1,3 +1,4 @@
+import Guest.Guest;
 import org.junit.Before;
 import org.junit.Test;
 
